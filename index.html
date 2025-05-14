@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Pagina echa por diseño</title><meta charset="UTF-8"><style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #contador {
+      font-size: 2em;
+      color: #2c3e50;
+    }
+  </style></head><body style="background-color: rgb(255, 204, 255); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+
+
+  
+  
+  
+
+
+  <h1>Bienvenido a mi sitio</h1>
+  <p>Has visitado esta página:</p>
+  <div id="contador">0</div>
+  <p>veces.</p>
+
+  <script>
+    // Obtener el contador actual del almacenamiento local
+    let visitas = localStorage.getItem('contadorVisitas');
+
+    // Si no existe, se inicializa en 0
+    if (!visitas) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+
+    // Guardar el nuevo valor
+    localStorage.setItem('contadorVisitas', visitas);
+
+    // Mostrar el contador en la página
+    document.getElementById('contador').textContent = visitas;
+  </script>
+
+
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2"><tbody><tr><td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="portada-de-mi-pagina.html">Portada de mi pagina</a></span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="introduccion-de-mi-pagina.html">Introduccion de mi pagina</a></span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="un-mundo-con-ariana-grande.html">Un Mmundo con Ariana Grande</a></span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="biografia.html">Biografia</a></span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="caracteristicas.html">Caracteristicas</a></span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;"><a href="videos-y-merchandising.html">Videos y Merchandising</a></span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="text-align: left;">
+
+<script>
+function updateClock() {
+    var now = new Date();
+    var hours = now.getHours().toString().padStart(2, '0');
+    var minutes = now.getMinutes().toString().padStart(2, '0');
+    var seconds = now.getSeconds().toString().padStart(2, '0');
+    var timeString = hours + ':' + minutes + ':' + seconds;
+    document.getElementById('clock').innerHTML = timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script></div>
+
+<br>
+<div style="text-align: center;"><span style="color: rgb(102, 51, 102);"><br>
+UN MUNDO CON ARIANA GRANDE<br>
+<br>
+</span><img style="width: 817px; height: 817px;" src="../Imagenes/ariana-grande-attends-the-97th-annual-oscars-at-dolby-news-photo-1740989890.pjpeg" alt="ariana-grande-attends-the-97th-annual-oscars-at-dolby-news-photo-1740989890.pjpeg"><br>
+<a href="../Documents/Tellez%20Islas%20Berenice/Imagenes/FTTOCF42JJDD7KUUJEZ3375OZM.avif"></a></div>
+
+
+</body></html>
